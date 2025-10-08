@@ -6,6 +6,7 @@ local max = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaxsModMe
 local flingall = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaxsModMenu/MaxsModMenus/main/flingall.lua"))()
 local esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaxsModMenu/MaxsModMenus/main/esp.lua"))()
 local gettools = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaxsModMenu/MaxsModMenus/main/gettools.lua"))()
+local invis = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaxsModMenu/MaxsModMenus/main/invis.lua"))()
 
 ui:Create({
     onFly = fly.Toggle,
@@ -14,6 +15,6 @@ ui:Create({
     onMax = max.Spawn,
     onFlingAll = flingall.Activate,
     onESP = esp.Enable,
-    onGetTools = gettools.Grab
+    onGetTools = gettools.Grab,
+    onInvis = invis.Toggle
 })
-
